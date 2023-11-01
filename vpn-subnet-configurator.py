@@ -32,7 +32,7 @@ def generate_ip_blocks():
         print("No available IP address blocks found.")
         return
 
-    print("Available IP address blocks:")
+    print("Available IP address blocks for your VPN or other uses:")
     for idx, block in enumerate(available_blocks, start=1):
         print(f"{idx}. {block}")
 
