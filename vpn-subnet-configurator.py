@@ -10,8 +10,8 @@ def get_user_input(prompt):
 #In order to avoid issues with connectivity we should avoid, this tool was intented when I need to create a random IP block for any VPN (WireGuard, OpenVPN, etc)
 def generate_ip_blocks():
     # Prompt the user for WAN and LAN network details
-    wan_subnet = ipaddress.IPv4Network(get_user_input("Enter your WAN subnet (e.g., 192.168.1.0/24): "), strict=False)
-    lan_subnet = ipaddress.IPv4Network(get_user_input("Enter your LAN subnet (e.g., 192.168.2.0/24): "), strict=False)
+    wan_subnet = ipaddress.IPv4Network(get_user_input("Enter your WAN subnet (e.g., 189.130.0.0/32): "), strict=False)
+    lan_subnet = ipaddress.IPv4Network(get_user_input("Enter your LAN subnet (e.g., 192.168.0.0/24): "), strict=False)
 
     # Calculate and print available IP address blocks
     private_ranges = [
